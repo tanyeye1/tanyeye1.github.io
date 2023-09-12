@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>git</title>
+    <url>/2022/04/27/git/</url>
+    <content><![CDATA[<p>  git的一些操作</p>
+<span id="more"></span>
+
+<p>git branch                      查看本地分支</p>
+<p>git branch【name】               创建本地分支</p>
+<p>git checkout【name】             切换分支</p>
+<p>git checkout -b                  创建并切换分支</p>
+<p>git pull                         本地和服务器端同步</p>
+<p>git commit -m ‘信息’             添加commit信息 </p>
+<p>git push                        将本地分支推送到服务器上去</p>
+<p>git rm 文件名                     删除文件</p>
+<p>git push origin 【本地分支】：【远程分支】                   创建远程分支</p>
+<p>git push origin —delete 【远程分支】                       删除远程分支</p>
+<p>git push –set-upstream origin 【远程分支】                关联远程分支</p>
+<p>git branch –set-upstream-to=origin/【远程分支】【本地分支】 关联远程分支</p>
+<p>git reset –hard hash值                                  回退到某个版本</p>
+<ol>
+<li><p>合并分支</p>
+<p> 在分支里</p>
+<p> git add .</p>
+<p> git commit -m ‘message’</p>
+<p> git push </p>
+<p> 把改动推到分支里面 </p>
+<p> 然后切换到master （主分支）</p>
+<p> git checkout master</p>
+<p> git pull  （拉取最新的代码）</p>
+<p> git merge 分支名字 （这里可能要处理一下冲突）</p>
+<p> git push</p>
+</li>
+<li><p>git stash （暂存）</p>
+<p> git stash save ‘save    message’</p>
+<p> git stash list</p>
+<p> git stash apply stash@{num}</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hello</title>
+    <url>/2022/04/27/hello/</url>
+    <content><![CDATA[<p>不知道说啥。。。</p>
+<span id="more"></span>
+<p>那先来句</p>
+<p>hello world ！吧</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>js</title>
+    <url>/2023/09/12/js/</url>
+    <content><![CDATA[<p>js的一些小技术点</p>
+<span id="more"></span>
+
+<h3 id=""><a href="#" class="headerlink" title="=="></a>==</h3><p>1.是否有NaN<br>首先判断双等号两边是否有NaN，如果有的话，则一律返回false。</p>
+<p>2.是否有boolean值<br>如果有的话则将true转化为1，false转化为0。</p>
+<p>3.null和undefined<br>遇到null或者undefined，则不会进行类型转换，它们相互的比较都返回true。</p>
+<p>4.有一边是字符串</p>
+<p>分四种情况：</p>
+<p>1） 同样是字符串，则直接进行字符串值的比较</p>
+<p>2） 是数字，则需要将字符串转化为数字，然后进行比较</p>
+<p>3） 有布尔类型，则要将布尔类型转化为0或则1，然后进行比较</p>
+<p>4） 对象或者数组类型，则需要调用toString()或者valueOf()方法转化成简单类型，然后进行比较</p>
+<h3 id="先比较类型，类型不同直接为false，如-0和-0-，-NaN-和-Number-NaN"><a href="#先比较类型，类型不同直接为false，如-0和-0-，-NaN-和-Number-NaN" class="headerlink" title="===  先比较类型，类型不同直接为false，如-0和+0 ， NaN 和 Number.NaN"></a>===  先比较类型，类型不同直接为false，如-0和+0 ， NaN 和 Number.NaN</h3><h3 id="Object-is-满足以下条件则两个值相等"><a href="#Object-is-满足以下条件则两个值相等" class="headerlink" title="Object.is( )  满足以下条件则两个值相等:"></a>Object.is( )  满足以下条件则两个值相等:</h3><ul>
+<li>都是 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/undefined"><code>undefined</code></a></li>
+<li>都是 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/null"><code>null</code></a></li>
+<li>都是 <code>true</code> 或 <code>false</code></li>
+<li>都是相同长度的字符串且相同字符按相同顺序排列</li>
+<li>都是相同对象（意味着每个对象有同一个引用）</li>
+<li>都是数字且<ul>
+<li>都是 <code>+0</code></li>
+<li>都是 <code>-0</code></li>
+<li>都是 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/NaN"><code>NaN</code></a></li>
+<li>或都是非零而且非 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/NaN"><code>NaN</code></a> 且为同一个值</li>
+</ul>
+</li>
+</ul>
+<h3 id="箭头函数和普通函数的区别"><a href="#箭头函数和普通函数的区别" class="headerlink" title="箭头函数和普通函数的区别"></a>箭头函数和普通函数的区别</h3><ul>
+<li><p>写法不同</p>
+</li>
+<li><p>this指向不同（普通函数的this执行环境不同而不同，箭头函数的this指向的是离他最近的执行环境）</p>
+</li>
+<li><p>普通函数可以被new实例化，箭头函数不可以</p>
+</li>
+<li><p>普通函数可以被声明提前，箭头函数不可以</p>
+</li>
+</ul>
+<h3 id="回流和重绘"><a href="#回流和重绘" class="headerlink" title="回流和重绘"></a>回流和重绘</h3><pre><code>+ 某个子元素样式发生改变，直接影响到了其父元素以及往上追溯很多祖先元素（包括兄弟元素），这个时候浏览器要重新去渲染这个子元素相关联的所有元素的过程称为回流。
++ 如果只是改变某个元素的背景色、文 字颜色、边框颜色等等不影响它周围或内部布局的属性，将只会引起浏览器 repaint（重绘）。
++ repaint 的速度明显快于 reflow
+</code></pre>
+<h3 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h3><pre><code>+ 原理：函数嵌套函数，通过函数内的函数访问局部变量的规则，实现外部访问函数内的变量。
++ 特点：函数嵌套函数、函数内部可以引用函数外部的参数和变量、参数和变量不会被垃圾回收机制回收。
++ 优点：保护变量安全，实现封装，防止变量声明冲突和全局污染。在内存当中维持一个变量，可以做缓存。匿名函数自执行函数可以减少内存消耗。
++ 缺点：变量会驻留在内存中，造成内存损耗问题。解决办法：把闭包函数设置为 null 。内存泄漏
++ 经典应用：防抖和节流
+</code></pre>
+<h3 id="数组扁平化"><a href="#数组扁平化" class="headerlink" title="数组扁平化"></a>数组扁平化</h3><pre><code>+ 原理：将多维数组变为一维数组
++ 方法：
+</code></pre>
+]]></content>
+      <categories>
+        <category>js</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>node</title>
+    <url>/2022/04/27/node/</url>
+    <content><![CDATA[<p>node的一些基本使用</p>
+<span id="more"></span>
+
+
+
+<h3 id="fs文件系统"><a href="#fs文件系统" class="headerlink" title="fs文件系统"></a>fs文件系统</h3><ul>
+<li><p>在使用fs操作文件时，如果操作路径是以./或../开头的相对路径时，很容易出现路径动态拼接错误的问题。</p>
+<p>原因：代码在运行时，会以node命令时所在的目录动态拼接出被操作文件的完整路径。</p>
+<p>解决方法：写入完整路径或者__dirname(当前文件所在的目录)</p>
+</li>
+<li><p>fs.readFile(path[, options], callback )</p>
+<p>第一个参数：必选，字符串，表示文件路径</p>
+<p>第二个参数：可选，表示以声明编码格式读取文件</p>
+<p>第三个参数：必选，文件读取完成后，通过回调函数拿到读取结果</p>
+</li>
+<li><p>fs.writeFile(file, data[, options], callback)  可创建一个文件，不能创建文件夹，新写入的内容会覆盖之前的内容</p>
+<p>第一个参数：必选，需要指定一个文件路径的字符串，表示文件的存放路径</p>
+<p>第二个参数：必选，表示要写入的内容</p>
+<p>第三个参数：可选，表示以什么格式写入文件内容，默认utf8</p>
+<p>第四个参数：必选，文件写入完成后的回调函数</p>
+</li>
+</ul>
+<h3 id="path路径"><a href="#path路径" class="headerlink" title="path路径"></a>path路径</h3><ul>
+<li><p>path.join( ) 可以把多个路径片段拼接为完整路径字符串</p>
+</li>
+<li><p>path.basename( ) 可以从文件路径中获取文件的名称部分</p>
+<p>第一个参数：必选，文件存放的路径</p>
+<p>第二个参数：可选，去掉文件后面的部分，可去掉文件的扩展名</p>
+</li>
+<li><p>path.extname( ) 可以获取路径中的扩展名部分</p>
+</li>
+</ul>
+<h3 id="http"><a href="#http" class="headerlink" title="http"></a>http</h3><ul>
+<li><p>创建基本的web服务</p>
+<ol>
+<li><p>const http  = require( ‘http ‘ )  导入http模块</p>
+</li>
+<li><p>const server = createServer( ) 创建http服务</p>
+</li>
+<li><p>server.on(‘request’, (req, res) =&gt; { } ) 绑定request事件，监听客户端的请求。req.url是客户端请求的url地址，req.method是客户端的请求类型</p>
+<p>res.end( )向客户端发送指定的内容，并结束这次请求的处理过程</p>
+<p>解决中文乱码的问题：设置响应头res.setHeader(‘Content-Type’, ‘text/html; charset=utf-8’)</p>
+</li>
+<li><p>server.listen(端口号, callback ) 启动服务器</p>
+</li>
+</ol>
+</li>
+</ul>
+<h3 id="module"><a href="#module" class="headerlink" title="module"></a>module</h3><ul>
+<li>使用require( )方法导入模块时，导入的结果永远以module.exports指向的对象为准</li>
+</ul>
+<h3 id="npm-和包"><a href="#npm-和包" class="headerlink" title="npm 和包"></a>npm 和包</h3><pre><code>+ npm config get registry  查看当前的下包镜像源
++ npm config set registry=https://registry.npm.taobao.org/ 将下包的镜像源切换为淘宝镜像源
++ nrm ls 查看所有可用的镜像源
++ nrm use taobao 将下包的镜像源切换为taobao镜像
++ npm i i5ting_toc -g 
++ I5ting_toc -f 要转化demd文件路径 -o 将md文档转化为html页面
++ npm login 登录发布包
++ npm publish 发布包
++ npm unpublish 包名 --force 可删除已经发布的包
+nvm 切换包
+</code></pre>
+<h3 id="express"><a href="#express" class="headerlink" title="express"></a>express</h3><ul>
+<li>app.use(express.json( ))可以解析表单json格式的数据</li>
+<li>app.use(epxress.urlencoded({ extended: false})) 可以解析表单中url-encoded格式的数据</li>
+<li>app.use(express.static( )) 可以快速托管静态资源的内置中间件</li>
+<li>app.use((req, res, next) =&gt; {  next( ) }) 中间件</li>
+</ul>
+<h3 id="web开发模式"><a href="#web开发模式" class="headerlink" title="web开发模式"></a>web开发模式</h3><ul>
+<li><p>服务端渲染的优缺点： </p>
+<p>优点：1. 前端耗时少，服务端直接动态生成html内容，浏览器直接渲染页面</p>
+<p>​            2有利于seo，服务端响应的是完整的html页面，爬虫更容易获取信息</p>
+<p>缺点：1. 占用服务端资源，服务端完成html页面的拼接，请求过多对服务器造成一            定的访问压力。</p>
+<p>​            2. 不利于前后端分离，开发效率低</p>
+</li>
+<li><p>前后端分离： 前端用ajax调用接口，后端提供api接口</p>
+<p>​    优点：1. 开发体验好</p>
+<p>​                2.用户体验好，ajax的应用提高了用户的体验，可以轻松实现页面的局部                刷新</p>
+<p>​                3.减轻了服务端的渲染压力</p>
+<p>​    缺点： 不利于seo</p>
+</li>
+</ul>
+<h3 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h3><pre><code>+ 是存储在用户浏览器中的一段不超过4kb的字符串，由name和value和其他几个控制cookie有效期、安全期、使用范围的可选属性组成
++ 不同域名下的cookie各自独立，每当客户端发起请求时，会自动把当前域名所有未过期的cookie一同发送到服务器
++ 特性：1.自动发送 2.域名独立 3.过期时限 4.4kb限制 5.不具有安全性
+</code></pre>
+<h3 id="session-非跨域"><a href="#session-非跨域" class="headerlink" title="session(非跨域)"></a>session(非跨域)</h3><pre><code>+ app.use( session(&#123;secret: &#39;任意字符&#39;, resave: false, saveUninitialized: true &#125;))
+</code></pre>
+<h3 id="token-跨域-（JWT认证机制）"><a href="#token-跨域-（JWT认证机制）" class="headerlink" title="token(跨域) （JWT认证机制）"></a>token(跨域) （JWT认证机制）</h3><pre><code>+ 由Header、Payload、Signature组成，Payload是真正的用户信息，Header和Signature是安全性相关部分，为了保证Token的安全性
++ jsonwebtoken生成JWT字符串 express-jwt 用于解析JSON对象
+</code></pre>
+]]></content>
+      <categories>
+        <category>node</category>
+      </categories>
+      <tags>
+        <tag>node</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>antd pro + umi4 + tailwindcss</title>
+    <url>/2023/07/24/antd-pro-umi4-tailwindcss/</url>
+    <content><![CDATA[<p>  antd pro + umi4 + tailwindcss 开发总结</p>
+<span id="more"></span>
+<h3 id="项目初始化"><a href="#项目初始化" class="headerlink" title="项目初始化"></a>项目初始化</h3><ul>
+<li><p>如果不需要全球化可以使用 npm run i18n-remove ，<code>formatMessage(&#123;id:somevar&#125;)</code> 这种动态的代码可能无法分析并删除，有些得手动删除。</p>
+</li>
+<li><p>在 <code>src/models</code> 目录下新建文件，文件名会成为 model 的 namespace. 允许使用 ts, js, tsx(推荐), jsx(不推荐) 四种后缀。useModel(‘文件名’)的数据可全局使用</p>
+<p><code>src/models/demo.ts</code></p>
+<figure class="highlight tsx"><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> () =&gt; &#123;</span><br><span class="line">  <span class="keyword">const</span> [data, setData] = <span class="title function_">useState</span>(<span class="string">&#x27;hello&#x27;</span>)</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    data,</span><br><span class="line">    setData</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>可以在预览界面中拷贝设置覆盖到 <code>config\defaultSettings.ts</code> 中来修改配置。</p>
+</li>
+<li><p><code>config/proxy.ts</code>中配置代理</p>
+</li>
+<li><p>引入<code>tailwindcss</code> </p>
+<p><code>config/config.ts</code></p>
+<figure class="highlight tsx"><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="title function_">defineConfig</span>(&#123;</span><br><span class="line">  ..... <span class="comment">// 其他配置</span></span><br><span class="line">  <span class="attr">extraPostCSSPlugins</span>: [<span class="built_in">require</span>(<span class="string">&#x27;tailwindcss&#x27;</span>)], <span class="comment">// 引入tailwindcss</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p><code>src/global.less</code> 最上面</p>
+<figure class="highlight less"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@import</span> <span class="string">&#x27;tailwindcss/base&#x27;</span>;</span><br><span class="line"><span class="keyword">@import</span> <span class="string">&#x27;tailwindcss/components&#x27;</span>;</span><br><span class="line"><span class="keyword">@import</span> <span class="string">&#x27;tailwindcss/utilities&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p>与<code>src</code>平级添加 <code>tailwind.config.js</code></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">  <span class="attr">content</span>: [</span><br><span class="line">    <span class="string">&#x27;./src/**/*.html&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;./src/**/*.tsx&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;./src/**/*.jsx&#x27;</span>,</span><br><span class="line">  ],</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="数据初始化-全局可用initialState"><a href="#数据初始化-全局可用initialState" class="headerlink" title="数据初始化 ( 全局可用initialState )"></a>数据初始化 ( 全局可用initialState )</h3><p><code>src/app.tsx </code></p>
+<figure class="highlight tsx"><table><tr><td class="code"><pre><span class="line"><span class="keyword">type</span> <span class="title class_">Menu</span> = &#123;</span><br><span class="line">  component?: <span class="built_in">string</span>;</span><br><span class="line">  icon?: <span class="built_in">string</span>;</span><br><span class="line">  name?: <span class="built_in">string</span>;</span><br><span class="line">  path?: <span class="built_in">string</span>;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">getInitialState</span>(<span class="params"></span>): <span class="title class_">Promise</span>&lt;&#123;</span><br><span class="line">  settings?: <span class="built_in">any</span>;</span><br><span class="line">  menuData?: <span class="title class_">Menu</span>[];</span><br><span class="line">  userInfo?: <span class="built_in">any</span>,</span><br><span class="line">&#125;&gt; &#123;</span><br><span class="line">  <span class="keyword">let</span> <span class="attr">data</span>: <span class="title class_">Data</span> = &#123;&#125;;</span><br><span class="line">  <span class="keyword">let</span> <span class="attr">menu</span>: <span class="built_in">any</span> = []</span><br><span class="line">  <span class="keyword">const</span> &#123;location&#125; = history</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;pathname&#x27;</span>, location.<span class="property">pathname</span>)</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">      <span class="keyword">await</span> 调用接口初始化数据，</span><br><span class="line">    &#125; <span class="keyword">catch</span> (error) &#123;&#125;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    <span class="attr">settings</span>: defaultSettings <span class="keyword">as</span> <span class="title class_">Partial</span>&lt;<span class="title class_">LayoutSettings</span>&gt;,</span><br><span class="line">    <span class="attr">menuData</span>: menu,</span><br><span class="line">    <span class="attr">userInfo</span>: data?.<span class="property">examUser</span>,</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="动态表单、自定义渲染菜单"><a href="#动态表单、自定义渲染菜单" class="headerlink" title="动态表单、自定义渲染菜单"></a>动态表单、自定义渲染菜单</h3><p><code>src/app.tsx</code></p>
+<figure class="highlight tsx"><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> <span class="attr">layout</span>: <span class="built_in">any</span> = <span class="function">(<span class="params">&#123; initialState, setInitialState &#125;</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">const</span> &#123; location &#125; = history;</span><br><span class="line">  <span class="keyword">const</span> &#123; pathname &#125; = location;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    <span class="comment">// 动态菜单</span></span><br><span class="line">     <span class="attr">menu</span>: &#123;</span><br><span class="line">      <span class="attr">params</span>: &#123;</span><br><span class="line">        <span class="attr">menuData</span>: initialState?.<span class="property">menuData</span></span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="attr">request</span>: <span class="keyword">async</span> (<span class="attr">params</span>: <span class="built_in">any</span>, <span class="attr">defaultMenuData</span>: <span class="built_in">any</span>) =&gt; &#123;</span><br><span class="line">        <span class="comment">// 这里可以调接口, params变化调用request</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> 需要配置的菜单 <span class="comment">// 和defaultMenuData数据类型一样</span></span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 自定义渲染菜单</span></span><br><span class="line">    <span class="attr">menuItemRender</span>: <span class="function">(<span class="params">itemProps</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">return</span> (</span><br><span class="line">        <span class="language-xml"><span class="tag">&lt;<span class="name">div</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">          <span class="attr">className</span>=<span class="string">&quot;flex&quot;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">          <span class="attr">onClick</span>=<span class="string">&#123;()</span> =&gt;</span> &#123;</span></span><br><span class="line"><span class="language-xml">            history.push(itemProps.path);</span></span><br><span class="line"><span class="language-xml">          &#125;&#125;</span></span><br><span class="line"><span class="language-xml">        &gt;</span></span><br><span class="line"><span class="language-xml">          <span class="tag">&lt;<span class="name">Space</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">            &#123;itemProps?.icon &amp;&amp; (</span></span><br><span class="line"><span class="language-xml">              <span class="tag">&lt;<span class="name">img</span> <span class="attr">style</span>=<span class="string">&#123;&#123;</span> <span class="attr">width:</span> <span class="attr">16</span>, <span class="attr">height:</span> <span class="attr">16</span> &#125;&#125; <span class="attr">src</span>=<span class="string">&#123;itemProps?.icon&#125;</span> <span class="attr">alt</span>=<span class="string">&quot;&quot;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">            )&#125;</span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;<span class="name">div</span>&gt;</span>&#123;itemProps.name&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">          <span class="tag">&lt;/<span class="name">Space</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">      );</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 自定义 403 页面</span></span><br><span class="line">    <span class="comment">// unAccessible: &lt;div&gt;unAccessible&lt;/div&gt;,</span></span><br><span class="line">    <span class="comment">// 增加一个 loading 的状态</span></span><br><span class="line">    <span class="attr">childrenRender</span>: <span class="function">(<span class="params">children</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="comment">// if (true) return &lt;PageLoading /&gt;;</span></span><br><span class="line">      <span class="keyword">return</span> (</span><br><span class="line">        <span class="language-xml"><span class="tag">&lt;&gt;</span></span></span><br><span class="line"><span class="language-xml">          &#123;children&#125;</span></span><br><span class="line"><span class="language-xml">          &#123;/* <span class="tag">&lt;<span class="name">SettingDrawer</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">            <span class="attr">disableUrlParams</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">            <span class="attr">enableDarkTheme</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">            <span class="attr">settings</span>=<span class="string">&#123;initialState?.settings&#125;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">            <span class="attr">onSettingChange</span>=<span class="string">&#123;(settings)</span> =&gt;</span> &#123;</span></span><br><span class="line"><span class="language-xml">              setInitialState((preInitialState) =&gt; (&#123;</span></span><br><span class="line"><span class="language-xml">                ...preInitialState,</span></span><br><span class="line"><span class="language-xml">                settings,</span></span><br><span class="line"><span class="language-xml">              &#125;));</span></span><br><span class="line"><span class="language-xml">            &#125;&#125;</span></span><br><span class="line"><span class="language-xml">          /&gt; */&#125;</span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;/&gt;</span></span></span><br><span class="line">      );</span><br><span class="line">    &#125;,</span><br><span class="line">    ...initialState?.<span class="property">settings</span>,</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="动态路由-如果不需要动态生成路由，在config-routes-ts里面配置即可，不需要加下面的函数了-。"><a href="#动态路由-如果不需要动态生成路由，在config-routes-ts里面配置即可，不需要加下面的函数了-。" class="headerlink" title="动态路由 ( 如果不需要动态生成路由，在config/routes.ts里面配置即可，不需要加下面的函数了 。)"></a>动态路由 ( 如果不需要动态生成路由，在config/routes.ts里面配置即可，不需要加下面的函数了 。)</h3><p><code>src/app.tsx</code></p>
+<figure class="highlight tsx"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">React</span> <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">function</span> <span class="title function_">patchClientRoutes</span>(<span class="params">&#123; routes &#125;</span>) &#123;</span><br><span class="line">  <span class="comment">// 如果想把内容放在菜单里面</span></span><br><span class="line">  routes.<span class="title function_">map</span>(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span>(res.<span class="property">path</span> === <span class="string">&#x27;/&#x27;</span>) &#123;</span><br><span class="line">     <span class="attr">path</span>: <span class="string">&#x27;/foo&#x27;</span>,</span><br><span class="line">     <span class="attr">element</span>: <span class="title class_">React</span>.<span class="title function_">createElement</span>(<span class="built_in">require</span>(<span class="string">&#x27;@/pages/OldPage&#x27;</span>).<span class="property">default</span>), <span class="comment">// 路径自己定</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">  <span class="comment">// 如果不想把内容放在菜单里面</span></span><br><span class="line">  routes.<span class="title function_">push</span>(</span><br><span class="line">    <span class="attr">path</span>: <span class="string">&#x27;/foo&#x27;</span>,</span><br><span class="line">    <span class="attr">element</span>: <span class="title class_">React</span>.<span class="title function_">createElement</span>(<span class="built_in">require</span>(<span class="string">&#x27;@/pages/OldPage&#x27;</span>).<span class="property">default</span>), <span class="comment">// 路径自己定</span></span><br><span class="line">  )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="部署相关配置"><a href="#部署相关配置" class="headerlink" title="部署相关配置"></a>部署相关配置</h3><p><code>config/config.ts</code></p>
+<figure class="highlight ts"><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="title function_">defineConfig</span>(&#123;</span><br><span class="line">  <span class="attr">publicPath</span>:  process.<span class="property">env</span>.<span class="property">NODE_ENV</span> === <span class="string">&#x27;production&#x27;</span> ? <span class="string">&#x27;./&#x27;</span> : <span class="string">&#x27;/&#x27;</span> , <span class="comment">// 配置相对路径</span></span><br><span class="line">  <span class="attr">hash</span>: <span class="literal">true</span>, <span class="comment">// build 之后的产物包含 hash 后缀。通常用于增量发布和避免浏览器加载缓存。</span></span><br><span class="line">  <span class="attr">history</span>: &#123;</span><br><span class="line">    <span class="attr">type</span>: <span class="string">&#x27;hash&#x27;</span> <span class="comment">// 开启hash路由模式</span></span><br><span class="line">  &#125;,</span><br><span class="line">  ..... <span class="comment">// 其他配置</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>antd pro + umi4</category>
+      </categories>
+      <tags>
+        <tag>antd pro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hooks</title>
+    <url>/2022/04/27/hooks/</url>
+    <content><![CDATA[<p>hooks的使用</p>
+<span id="more"></span>
+<h3 id="useState"><a href="#useState" class="headerlink" title="useState"></a>useState</h3><p>  const [count, setCount] = useState() 初始化时最好加个初始值或者null，setCount()可以接受一个对象或者函数，地址要改变。</p>
+<h3 id="useEffect"><a href="#useEffect" class="headerlink" title="useEffect"></a>useEffect</h3><p>一开始会执行一次，每次render后看依赖执行</p>
+<ul>
+<li>使用[]作为第二个参数，等价于componentDidMount</li>
+<li>指定依赖，等价于componentDidUpdata</li>
+<li>通过return，等价于componentWillUnmount</li>
+</ul>
+<h3 id="useContext"><a href="#useContext" class="headerlink" title="useContext"></a>useContext</h3><p>​    先createContext() 创造一个对象，然后在对象.Provider 通过value={}将要共享的数据和改变数据的方法传下去，对象.Provider圈定作用域，在作用域内通过useContext拿到对应的数据和方法。</p>
+<h3 id="useReducer（复杂版useState）"><a href="#useReducer（复杂版useState）" class="headerlink" title="useReducer（复杂版useState）"></a>useReducer（复杂版useState）</h3><p>​    创造一个操作函数reducer(state, action)，然后传给const {state,dispatch}=useReducer（reducer，{}），调用dispatch写({type: ‘操作类型’})</p>
+<h3 id="useRef"><a href="#useRef" class="headerlink" title="useRef"></a>useRef</h3><p>​    可以获取dom节点对其进行操作</p>
+<h3 id="useMemo-比useEffect先执行"><a href="#useMemo-比useEffect先执行" class="headerlink" title="useMemo(比useEffect先执行)"></a>useMemo(比useEffect先执行)</h3><p>​    第一个参数是（）=&gt; value 第二个参数是依赖，只有当依赖变化时才会重新计算新的value，相当于shouldComponentUpdate。返回的是值</p>
+<h3 id="useCallback"><a href="#useCallback" class="headerlink" title="useCallback"></a>useCallback</h3><p>​    和useMemo差不多，返回的是一个函数。</p>
+]]></content>
+      <categories>
+        <category>hooks</category>
+      </categories>
+      <tags>
+        <tag>hooks</tag>
+      </tags>
+  </entry>
+</search>
