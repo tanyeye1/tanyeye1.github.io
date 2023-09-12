@@ -2853,7 +2853,7 @@ mjx-container[display='true'] + br {
   background: var(--body-bg-color);
 }
 body {
-  background: url("/images/lol.jpeg");
+  background: url("/images/bg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

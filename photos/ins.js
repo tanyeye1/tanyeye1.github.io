@@ -529,8 +529,8 @@
         }
 
         // Pass data to PhotoSwipe and initialize it
+        //TODO
         console.log('???', gallery, PhotoSwipe)
-
         gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
         gallery.init();
 
