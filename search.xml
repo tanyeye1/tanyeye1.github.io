@@ -46,15 +46,6 @@
       </tags>
   </entry>
   <entry>
-    <title>hello</title>
-    <url>/2022/04/27/hello/</url>
-    <content><![CDATA[<p>不知道说啥。。。</p>
-<span id="more"></span>
-<p>那先来句</p>
-<p>hello world ！吧</p>
-]]></content>
-  </entry>
-  <entry>
     <title>git</title>
     <url>/2022/04/27/git/</url>
     <content><![CDATA[<p>  git的一些操作</p>
@@ -101,29 +92,13 @@
       </tags>
   </entry>
   <entry>
-    <title>hooks</title>
-    <url>/2022/04/27/hooks/</url>
-    <content><![CDATA[<p>hooks的使用</p>
+    <title>hello</title>
+    <url>/2022/04/27/hello/</url>
+    <content><![CDATA[<p>不知道说啥。。。</p>
 <span id="more"></span>
-<h3 id="useState"><a href="#useState" class="headerlink" title="useState"></a>useState</h3><p>  const [count, setCount] = useState() 初始化时最好加个初始值或者null，setCount()可以接受一个对象或者函数，地址要改变。</p>
-<h3 id="useEffect"><a href="#useEffect" class="headerlink" title="useEffect"></a>useEffect</h3><p>一开始会执行一次，每次render后看依赖执行</p>
-<ul>
-<li>使用[]作为第二个参数，等价于componentDidMount</li>
-<li>指定依赖，等价于componentDidUpdata</li>
-<li>通过return，等价于componentWillUnmount</li>
-</ul>
-<h3 id="useContext"><a href="#useContext" class="headerlink" title="useContext"></a>useContext</h3><p>​    先createContext() 创造一个对象，然后在对象.Provider 通过value={}将要共享的数据和改变数据的方法传下去，对象.Provider圈定作用域，在作用域内通过useContext拿到对应的数据和方法。</p>
-<h3 id="useReducer（复杂版useState）"><a href="#useReducer（复杂版useState）" class="headerlink" title="useReducer（复杂版useState）"></a>useReducer（复杂版useState）</h3><p>​    创造一个操作函数reducer(state, action)，然后传给const {state,dispatch}=useReducer（reducer，{}），调用dispatch写({type: ‘操作类型’})</p>
-<h3 id="useRef"><a href="#useRef" class="headerlink" title="useRef"></a>useRef</h3><p>​    可以获取dom节点对其进行操作</p>
-<h3 id="useMemo-比useEffect先执行"><a href="#useMemo-比useEffect先执行" class="headerlink" title="useMemo(比useEffect先执行)"></a>useMemo(比useEffect先执行)</h3><p>​    第一个参数是（）=&gt; value 第二个参数是依赖，只有当依赖变化时才会重新计算新的value，相当于shouldComponentUpdate。返回的是值</p>
-<h3 id="useCallback"><a href="#useCallback" class="headerlink" title="useCallback"></a>useCallback</h3><p>​    和useMemo差不多，返回的是一个函数。</p>
+<p>那先来句</p>
+<p>hello world ！吧</p>
 ]]></content>
-      <categories>
-        <category>hooks</category>
-      </categories>
-      <tags>
-        <tag>hooks</tag>
-      </tags>
   </entry>
   <entry>
     <title>js</title>
@@ -285,6 +260,31 @@ nvm 切换包
       </categories>
       <tags>
         <tag>node</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hooks</title>
+    <url>/2022/04/27/hooks/</url>
+    <content><![CDATA[<p>hooks的使用</p>
+<span id="more"></span>
+<h3 id="useState"><a href="#useState" class="headerlink" title="useState"></a>useState</h3><p>  const [count, setCount] = useState() 初始化时最好加个初始值或者null，setCount()可以接受一个对象或者函数，地址要改变。</p>
+<h3 id="useEffect"><a href="#useEffect" class="headerlink" title="useEffect"></a>useEffect</h3><p>一开始会执行一次，每次render后看依赖执行</p>
+<ul>
+<li>使用[]作为第二个参数，等价于componentDidMount</li>
+<li>指定依赖，等价于componentDidUpdata</li>
+<li>通过return，等价于componentWillUnmount</li>
+</ul>
+<h3 id="useContext"><a href="#useContext" class="headerlink" title="useContext"></a>useContext</h3><p>​    先createContext() 创造一个对象，然后在对象.Provider 通过value={}将要共享的数据和改变数据的方法传下去，对象.Provider圈定作用域，在作用域内通过useContext拿到对应的数据和方法。</p>
+<h3 id="useReducer（复杂版useState）"><a href="#useReducer（复杂版useState）" class="headerlink" title="useReducer（复杂版useState）"></a>useReducer（复杂版useState）</h3><p>​    创造一个操作函数reducer(state, action)，然后传给const {state,dispatch}=useReducer（reducer，{}），调用dispatch写({type: ‘操作类型’})</p>
+<h3 id="useRef"><a href="#useRef" class="headerlink" title="useRef"></a>useRef</h3><p>​    可以获取dom节点对其进行操作</p>
+<h3 id="useMemo-比useEffect先执行"><a href="#useMemo-比useEffect先执行" class="headerlink" title="useMemo(比useEffect先执行)"></a>useMemo(比useEffect先执行)</h3><p>​    第一个参数是（）=&gt; value 第二个参数是依赖，只有当依赖变化时才会重新计算新的value，相当于shouldComponentUpdate。返回的是值</p>
+<h3 id="useCallback"><a href="#useCallback" class="headerlink" title="useCallback"></a>useCallback</h3><p>​    和useMemo差不多，返回的是一个函数。</p>
+]]></content>
+      <categories>
+        <category>hooks</category>
+      </categories>
+      <tags>
+        <tag>hooks</tag>
       </tags>
   </entry>
 </search>
