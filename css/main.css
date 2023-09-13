@@ -2853,8 +2853,7 @@ mjx-container[display='true'] + br {
   background: var(--body-bg-color);
 }
 body {
-  background: url("/images/bg.jpg");
-  background-repeat: no-repeat;
+  background: url("https://cdn.jsdelivr.net/gh/tanyeye1/blog-Picture@master/min_photos/2023-09-13_bg.jpg") no-repeat center;
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 50%;
