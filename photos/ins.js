@@ -121,13 +121,21 @@
           var type = data.type[i];
           var target = src + (type === 'video' ? '.mp4' : '.jpg');
           src += '';
-
+          var extractedString = data.link[i].replace(/\.\w+$/, ""); // 删除文件扩展名
+          extractedString = extractedString.replace(/^\d{4}-\d{2}-\d{2}_/, ""); // 删除日期部分和下划线
           liTmpl += '<figure class="thumb" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">\
                 <a href="' + src + '" itemprop="contentUrl" data-size="1080x1080" data-type="' + type + '" data-target="' + src + '">\
                   <img class="reward-img" data-type="' + type + '" src="' + src + '"  itemprop="thumbnail" onload="lzld(this)">\
+                  <div>' + extractedString + '</div>\
                 </a>\
                 <figcaption style="display:none" itemprop="caption description">' + data.text[i] + '</figcaption>\
             </figure>';
+          // liTmpl += '<figure class="thumb" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">\
+          //       <a href="' + src + '" itemprop="contentUrl" data-size="1080x1080" data-type="' + type + '" data-target="' + src + '">\
+          //         <img class="reward-img" data-type="' + type + '" data-src="' + minSrc + '" src="/assets/img/empty.png" itemprop="thumbnail" onload="lzld(this)">\
+          //       </a>\
+          //       <figcaption style="display:none" itemprop="caption description">' + data.text[i] + '</figcaption>\
+          //   </figure>';
         }
         ulTmpl = ulTmpl + '<section class="archives album"><h1 class="year">' + data.year + '年<em>' + data.month + '月</em></h1>\
         <ul class="img-box-ul">' + liTmpl + '</ul>\
@@ -470,6 +478,7 @@
 
         return params;
       };
+      // console.log('photoswipe', photoswipe)
 
       var openPhotoSwipe = function openPhotoSwipe(index, galleryElement, disableAnimation, fromURL) {
         var pswpElement = document.querySelectorAll('.pswp')[0],
@@ -530,7 +539,6 @@
 
         // Pass data to PhotoSwipe and initialize it
         //TODO
-        console.log('???', gallery, PhotoSwipe)
         gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
         gallery.init();
 
