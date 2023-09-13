@@ -47,6 +47,15 @@
   </url>
   
   <url>
+    <loc>https://tanyeye1.github.io/2023/07/24/antd-pro-umi4-tailwindcss/</loc>
+    
+    <lastmod>2023-09-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://tanyeye1.github.io/2022/04/27/git/</loc>
     
     <lastmod>2023-09-12</lastmod>
@@ -82,15 +91,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://tanyeye1.github.io/2023/07/24/antd-pro-umi4-tailwindcss/</loc>
-    
-    <lastmod>2023-09-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://tanyeye1.github.io/</loc>
@@ -99,6 +99,13 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://tanyeye1.github.io/tags/antd-pro/</loc>
+    <lastmod>2023-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>https://tanyeye1.github.io/tags/git/</loc>
@@ -122,13 +129,6 @@
   </url>
   
   <url>
-    <loc>https://tanyeye1.github.io/tags/antd-pro/</loc>
-    <lastmod>2023-09-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://tanyeye1.github.io/tags/node/</loc>
     <lastmod>2023-09-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -136,6 +136,13 @@
   </url>
   
 
+  
+  <url>
+    <loc>https://tanyeye1.github.io/categories/antd-pro-umi4/</loc>
+    <lastmod>2023-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>https://tanyeye1.github.io/categories/git/</loc>
@@ -153,13 +160,6 @@
   
   <url>
     <loc>https://tanyeye1.github.io/categories/js/</loc>
-    <lastmod>2023-09-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tanyeye1.github.io/categories/antd-pro-umi4/</loc>
     <lastmod>2023-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

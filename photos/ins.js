@@ -116,8 +116,11 @@
         var data = res.list[j].arr;
         var liTmpl = "";
         for (var i = 0, len = data.link.length; i < len; i++) {
+          // https://cdn.jsdelivr.net/gh/tanyeye1/blog-Picture@master/photos/2021-08-08_%E7%9C%B7%E6%80%9D%E9%87%8F10.jpg
+          // https://raw.githubusercontent.com/tanyeye1/blog-Picture/master/photos/2021-08-08_%E7%9C%B7%E6%80%9D%E9%87%8F10.jpg
+
           var minSrc = 'https://raw.githubusercontent.com/tanyeye1/blog-Picture/master/min_photos/' + data.link[i];
-          var src = 'https://raw.githubusercontent.com/tanyeye1/blog-Picture/master/photos/' + data.link[i];
+          var src = 'https://cdn.jsdelivr.net/gh/tanyeye1/blog-Picture@master/photos/' + data.link[i];
           var type = data.type[i];
           var target = src + (type === 'video' ? '.mp4' : '.jpg');
           src += '';
