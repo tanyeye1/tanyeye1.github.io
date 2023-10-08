@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://tanyeye1.github.io/2022/04/27/git/</loc>
+    <lastmod>2023-10-08</lastmod>
+  </url>
+  <url>
     <loc>https://tanyeye1.github.io/2023/09/21/%E7%AC%94%E8%AF%95%E9%A2%98/</loc>
     <lastmod>2023-09-22</lastmod>
   </url>
@@ -22,10 +26,6 @@
   </url>
   <url>
     <loc>https://tanyeye1.github.io/2023/09/12/js/</loc>
-    <lastmod>2023-09-12</lastmod>
-  </url>
-  <url>
-    <loc>https://tanyeye1.github.io/2022/04/27/git/</loc>
     <lastmod>2023-09-12</lastmod>
   </url>
 </urlset> 

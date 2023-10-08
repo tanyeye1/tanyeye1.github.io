@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tanyeye1.github.io/2022/04/27/git/</loc>
+    
+    <lastmod>2023-10-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tanyeye1.github.io/photos/data.json</loc>
+    
+    <lastmod>2023-10-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://tanyeye1.github.io/2023/09/21/%E7%AC%94%E8%AF%95%E9%A2%98/</loc>
     
     <lastmod>2023-09-22</lastmod>
@@ -14,15 +32,6 @@
     <loc>https://tanyeye1.github.io/2022/04/27/hooks/</loc>
     
     <lastmod>2023-09-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://tanyeye1.github.io/photos/data.json</loc>
-    
-    <lastmod>2023-09-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -91,15 +100,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://tanyeye1.github.io/2022/04/27/git/</loc>
-    
-    <lastmod>2023-09-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://tanyeye1.github.io/</loc>
@@ -111,6 +111,13 @@
   
   <url>
     <loc>https://tanyeye1.github.io/tags/antd-pro/</loc>
+    <lastmod>2023-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tanyeye1.github.io/tags/git/</loc>
     <lastmod>2023-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -144,17 +151,17 @@
     <priority>0.2</priority>
   </url>
   
+
+  
   <url>
-    <loc>https://tanyeye1.github.io/tags/git/</loc>
+    <loc>https://tanyeye1.github.io/categories/antd-pro-umi4/</loc>
     <lastmod>2023-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
-
-  
   <url>
-    <loc>https://tanyeye1.github.io/categories/antd-pro-umi4/</loc>
+    <loc>https://tanyeye1.github.io/categories/git/</loc>
     <lastmod>2023-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -183,13 +190,6 @@
   
   <url>
     <loc>https://tanyeye1.github.io/categories/%E7%AC%94%E8%AF%95%E9%A2%98/</loc>
-    <lastmod>2023-10-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tanyeye1.github.io/categories/git/</loc>
     <lastmod>2023-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
