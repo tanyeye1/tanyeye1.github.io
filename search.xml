@@ -1,6 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>23年国庆</title>
+    <url>/2023/10/08/23%E5%B9%B4%E5%9B%BD%E5%BA%86/</url>
+    <content><![CDATA[<p>纪念一下国庆日常<br>捕获小散财童子一枚。。。嘿嘿<br>这次国庆又花了几千块，打牌就输了快一千了。。。根本存不住钱<br>不过能天天打牌是真的很爽，就是太累了，比上班还还累，觉都没时间睡，到处浪。</p>
+<span id="more"></span>
+<h3 id="国庆经历日程"><a href="#国庆经历日程" class="headerlink" title="国庆经历日程"></a>国庆经历日程</h3><img src="/images/23年国庆.png" alt="23年国庆" style="border: 1px solid; margin-bottom: 5px" />
+
+<h3 id="9-27"><a href="#9-27" class="headerlink" title="9.27"></a>9.27</h3><p>下午6点下班赶晚上10点的火车，凌晨两点到长沙。然后走了三公里去我哥的酒店，点了个烧烤外卖，玩了会金铲铲，4点才睡。。。</p>
+<h3 id="9-28"><a href="#9-28" class="headerlink" title="9.28"></a>9.28</h3><p>上午7点不到就起床赶9点47回家的高铁，中午到家，下午和晚上和同学打牌。</p>
+<h3 id="9-29"><a href="#9-29" class="headerlink" title="9.29"></a>9.29</h3><p>上午8点起床吃新宇卤粉，中午在家吃团圆饭，下午帮我妈搞评职称的word文档，晚上带我弟去买零食，然后和我哥去看前任四，挺有感触的（怎么说呢，感觉单身是真的舒服，啥也不用考虑，想干嘛就干嘛，但是也想试试爱情的苦，不过这玩意离我太遥远了。。。嘿嘿）。回去的路上，看电影看饿了，顺便去北方饺子王吃了一份炒细粉加鸡腿</p>
+<h3 id="9-30"><a href="#9-30" class="headerlink" title="9.30"></a>9.30</h3><p>上午帮我妈搞评职称的事。中午去我姑姑家吃饭。下午同学约打麻将，打到凌晨1点多，打着打着晚饭都没吃，散摊之后去北方饺子王吃了一份炒细粉加鸡腿（吃着真的爽）。</p>
+<h3 id="10-1"><a href="#10-1" class="headerlink" title="10.1"></a>10.1</h3><p>上午帮我妈搞评职称的事。下午和猪他们在他亲戚家开的麻将馆打麻将。晚上大伙在河边转了一圈，不知道吃啥，就去新宇吃了加量的卤粉 ，晚上继续打牌。</p>
+<h3 id="10-2"><a href="#10-2" class="headerlink" title="10.2"></a>10.2</h3><p>上午帮我妈搞评职称的事。下午去梁胖子家搞烧烤，晚上打牌。</p>
+<h3 id="10-3"><a href="#10-3" class="headerlink" title="10.3"></a>10.3</h3><p>上午睡了一上午。下午回家，晚上去了附近的旭达游乐场，玩完回来接着打牌，打了个通宵，到上午7点才回家。</p>
+<h3 id="10-4"><a href="#10-4" class="headerlink" title="10.4"></a>10.4</h3><p>回来之后交也没睡，教我妈怎么处理word的一些问题，8点出门，买了一份新宇卤粉，去汽车站坐9点去株洲的车。上午11点到姑姑家，中午吃完饭就和姑父、我哥一起打跑得快，除了吃晚饭，一直打到11点。</p>
+<h3 id="10-5"><a href="#10-5" class="headerlink" title="10.5"></a>10.5</h3><p>早上8点起床吃早餐，吃完继续跑得快。中午姑姑他们出去吃席了。下午一点接着打跑得快，打到晚上7点吃饭，吃完饭洗个澡就出门，找商城买了个u型枕，晚上11点47的火车坐票，还晚点两个小时了，还好到杭州还是11点半到。</p>
+<h3 id="10-6"><a href="#10-6" class="headerlink" title="10.6"></a>10.6</h3><p>12点出杭州南站，找到同学（他国庆来杭州，而我国庆回家了，只好约到6号带他玩玩。。。笑死），带他去湖滨银泰吃饭。下午回家和他打了会乒乓球，然后送他上地铁。至此，忙碌的假期结束！！！</p>
+]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git</title>
+    <url>/2022/04/27/git/</url>
+    <content><![CDATA[<p>  git的一些操作</p>
+<span id="more"></span>
+
+<p>git branch                      查看本地分支</p>
+<p>git branch【name】               创建本地分支</p>
+<p>git checkout【name】             切换分支</p>
+<p>git checkout -b                  创建并切换分支</p>
+<p>git pull                         本地和服务器端同步</p>
+<p>git commit -m ‘信息’             添加commit信息 </p>
+<p>git push                        将本地分支推送到服务器上去</p>
+<p>git rm 文件名                     删除文件</p>
+<p>git push origin 【本地分支】：【远程分支】                   创建远程分支</p>
+<p>git push origin —delete 【远程分支】                       删除远程分支</p>
+<p>git push –set-upstream origin 【远程分支】                关联远程分支</p>
+<p>git branch –set-upstream-to=origin/【远程分支】【本地分支】 关联远程分支</p>
+<p>git reset –hard hash值                                  回退到某个版本</p>
+<ol>
+<li><p>合并分支</p>
+<p> 在分支里</p>
+<p> git add .</p>
+<p> git commit -m ‘message’</p>
+<p> git push </p>
+<p> 把改动推到分支里面 </p>
+<p> 然后切换到master （主分支）</p>
+<p> git checkout master</p>
+<p> git pull  （拉取最新的代码）</p>
+<p> git merge 分支名字 （这里可能要处理一下冲突）</p>
+<p> git push</p>
+</li>
+<li><p>git stash （暂存）</p>
+<p> git stash save ‘save    message’</p>
+<p> git stash list</p>
+<p> git stash apply stash@{num}</p>
+<h3 id="修改历史-commit-的方案"><a href="#修改历史-commit-的方案" class="headerlink" title="修改历史 commit 的方案"></a>修改历史 commit 的方案</h3><!-- ![修改历史 commit 的方案](/images/git.png) -->
+<img src="/images/git.png" alt="修改历史 commit 的方案" style="border: 1px solid" /></li>
+</ol>
+]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>antd pro + umi4 + tailwindcss</title>
     <url>/2023/07/24/antd-pro-umi4-tailwindcss/</url>
     <content><![CDATA[<p>  antd pro + umi4 + tailwindcss 开发总结</p>
@@ -43,52 +115,6 @@
       </categories>
       <tags>
         <tag>antd pro</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>git</title>
-    <url>/2022/04/27/git/</url>
-    <content><![CDATA[<p>  git的一些操作</p>
-<span id="more"></span>
-
-<p>git branch                      查看本地分支</p>
-<p>git branch【name】               创建本地分支</p>
-<p>git checkout【name】             切换分支</p>
-<p>git checkout -b                  创建并切换分支</p>
-<p>git pull                         本地和服务器端同步</p>
-<p>git commit -m ‘信息’             添加commit信息 </p>
-<p>git push                        将本地分支推送到服务器上去</p>
-<p>git rm 文件名                     删除文件</p>
-<p>git push origin 【本地分支】：【远程分支】                   创建远程分支</p>
-<p>git push origin —delete 【远程分支】                       删除远程分支</p>
-<p>git push –set-upstream origin 【远程分支】                关联远程分支</p>
-<p>git branch –set-upstream-to=origin/【远程分支】【本地分支】 关联远程分支</p>
-<p>git reset –hard hash值                                  回退到某个版本</p>
-<ol>
-<li><p>合并分支</p>
-<p> 在分支里</p>
-<p> git add .</p>
-<p> git commit -m ‘message’</p>
-<p> git push </p>
-<p> 把改动推到分支里面 </p>
-<p> 然后切换到master （主分支）</p>
-<p> git checkout master</p>
-<p> git pull  （拉取最新的代码）</p>
-<p> git merge 分支名字 （这里可能要处理一下冲突）</p>
-<p> git push</p>
-</li>
-<li><p>git stash （暂存）</p>
-<p> git stash save ‘save    message’</p>
-<p> git stash list</p>
-<p> git stash apply stash@{num}<br>修改历史 commit 的方案<br><img src="https://tanyeye1.github.io/images/git.png" alt="修改历史 commit 的方案"></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>git</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
       </tags>
   </entry>
   <entry>
